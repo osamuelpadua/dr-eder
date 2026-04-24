@@ -176,7 +176,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero-headline-soft {
-  color: #263743;
+  color: var(--dark);
   font-weight: 400;
 }
 
