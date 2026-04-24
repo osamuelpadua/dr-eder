@@ -175,6 +175,11 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 24px;
 }
 
+.hero-headline-soft {
+  color: #263743;
+  font-weight: 400;
+}
+
 .gradient-text {
   background: var(--gradient);
   -webkit-background-clip: text;
