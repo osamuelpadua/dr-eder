@@ -1300,6 +1300,35 @@ body::-webkit-scrollbar-thumb:hover {
   color: #2C5E2C;
 }
 
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 0 22px;
+  height: 44px;
+  border-radius: 100px;
+  border: 1.5px solid #306D1D;
+  background: transparent;
+  color: #306D1D;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cv:hover {
+  background: #306D1D;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-cv svg {
+  flex-shrink: 0;
+  transition: inherit;
+}
+
 .profile-socials {
   display: flex;
   align-items: center;
