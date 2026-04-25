@@ -1203,6 +1203,10 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--dark);
 }
 
+.condition-body strong {
+  color: #306D1D;
+}
+
 /* ===== RESPONSIVE: CONDITION BLOCK ===== */
 @media (max-width: 820px) {
   .condition-inner {
