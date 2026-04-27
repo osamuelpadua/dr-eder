@@ -86,7 +86,8 @@
   <link rel="icon" type="image/svg+xml" href="stamp-iso.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -131,7 +132,10 @@
             <img src="stamp-txt.svg" class="stamp-txt" alt="">
             <img src="stamp-iso.svg" class="stamp-iso" alt="">
           </div>
-          <img src="dr-eder.png" class="doctor-img" alt="Dr. Eder Marcos">
+          <picture>
+            <source srcset="dr-eder.webp" type="image/webp">
+            <img src="dr-eder.png" class="doctor-img" alt="Dr. Eder Marcos">
+          </picture>
         </div>
 
       </div>
@@ -221,7 +225,10 @@
 
     <div class="problems-inner">
       <div class="problems-img-col">
-        <img src="img1.png" class="problems-img" alt="Coluna vertebral com dor">
+        <picture>
+          <source srcset="img1.webp" type="image/webp">
+          <img src="img1.png" class="problems-img" alt="Coluna vertebral com dor">
+        </picture>
       </div>
 
       <h2 class="problems-headline">Alguns dos<br>problemas mais<br>comuns na coluna</h2>
@@ -258,7 +265,10 @@
     <div class="condition-inner">
 
       <div class="condition-media">
-        <img src="ciatico.jpg" class="condition-img" alt="Dor no Nervo Ciático">
+        <picture>
+          <source srcset="ciatico.webp" type="image/webp">
+          <img src="ciatico.jpg" class="condition-img" alt="Dor no Nervo Ciático">
+        </picture>
       </div>
 
       <div class="condition-text">
@@ -550,7 +560,10 @@
   <section class="profile-block">
     <div class="profile-inner">
       <div class="profile-media">
-        <img src="profile.jpg" alt="Dr. Eder Marcos" class="profile-image">
+        <picture>
+          <source srcset="profile.webp" type="image/webp">
+          <img src="profile.jpg" alt="Dr. Eder Marcos" class="profile-image">
+        </picture>
       </div>
 
       <div class="profile-content">
