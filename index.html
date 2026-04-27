@@ -1070,6 +1070,21 @@
           elements.forEach(function (element) {
             observer.observe(element);
           });
+
+          function revealNearBottom() {
+            var scrollBottom = window.scrollY + window.innerHeight;
+            var docHeight = document.documentElement.scrollHeight;
+            if (docHeight - scrollBottom < 80) {
+              elements.forEach(function (el) {
+                if (!el.classList.contains('is-visible')) {
+                  el.classList.add('is-visible');
+                  observer.unobserve(el);
+                }
+              });
+            }
+          }
+          window.addEventListener('scroll', revealNearBottom, { passive: true });
+          revealNearBottom();
         });
       });
     })();
